@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "senol-randomizer"
-version = "0.1.6post2"
+version = "0.1.6post3"
 description = "Cryptography-inspired random generation experiment"
 readme = "README.md"
 requires-python = ">=3.8"
