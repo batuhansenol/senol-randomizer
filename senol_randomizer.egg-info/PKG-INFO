@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: senol-randomizer
+Version: 0.1.6.post1
+Summary: Cryptography-inspired random generation experiment
+Author: Batuhan Şenol
+License: Apache-2.0
+Keywords: random,cryptography,rng,number-generation,random-data
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: gmpy2
+
+
+# senol-randomizer
+
+An RNG-core-based random data generator written in a cryptographic style, but lacking any cryptographic proof, which creates an information asymmetry between the program and urandom.
+
+### How does it work?
+
+- First, it takes 256-bit numbers from __/dev/urandom__.
+- Second, it processes these numbers using the powmod() function from the gmpy library, applying the operation a
+b
+modn, and does this for each __*n*__.
+- The list of n values consists of 256-bit *prime* numbers.
+- This output is also used in the generation of other data types.
+
+__*--Batuhan Şenol*__
