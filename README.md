@@ -12,6 +12,8 @@ modn, and does this for each __*n*__.
 - The list of n values consists of 256-bit *prime* numbers.
 - This output is also used in the generation of other data types.
 
-[Project Repo Github](https://github.com/batuhansenol/https://github.com/batuhansenol/senol-randomizer) - [Author Profile](https://github.com/batuhansenol)
+[Project Repo Github](https://github.com/batuhansenol/senol-randomizer) •  [Project Repo PyPI](https://pypi.org/project/senol-randomizer/)
+
+[Author Github Profile](https://github.com/batuhansenol) • [Author PyPI Profile](https://pypi.org/user/Batuhan_Senol/)
 
 __*--Batuhan Şenol*__

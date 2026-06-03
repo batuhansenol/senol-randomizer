@@ -26,7 +26,6 @@ keywords = [
 ]
 
 classifiers = [
-    "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Topic :: Security :: Cryptography",
     "Topic :: Scientific/Engineering :: Mathematics",
