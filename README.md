@@ -12,6 +12,18 @@ modn, and does this for each __*n*__.
 - The list of n values consists of 256-bit *prime* numbers.
 - This output is also used in the generation of other data types.
 
+### How To Use?
+
+```python
+import senol_randomizer as sr
+
+sr.newstr(num=10)
+sr.newint(_min=10, _max=100)
+sr.newfloat(_min=1, _max=20)
+sr.newbyte(num=100)
+sr.RNG() # This is core function
+```
+
 [Project Repo Github](https://github.com/batuhansenol/senol-randomizer) •  [Project Repo PyPI](https://pypi.org/project/senol-randomizer/)
 
 [Author Github Profile](https://github.com/batuhansenol) • [Author PyPI Profile](https://pypi.org/user/Batuhan_Senol/)

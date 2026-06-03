@@ -23,11 +23,11 @@ def signature(show=False):
     return data
 
 __all__ = [
-    "createint",
-    "createstr",
-    "createfloat",
-    "createbool",
-    "createbyte",
+    "newint",
+    "newstr",
+    "newfloat",
+    "newbool",
+    "newbyte",
     "RNG",
     "signature"
 ]
