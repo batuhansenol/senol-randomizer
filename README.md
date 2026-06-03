@@ -21,6 +21,7 @@ sr.newstr(num=10, _min=31, _max=128) # _min and _max, is a unicode range.
 sr.newint(_min=10, _max=100)
 sr.newfloat(_min=1, _max=20)
 sr.newbyte(num=100)
+sr.newbool()
 sr.RNG() # This is core function.
 ```
 
