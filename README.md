@@ -14,16 +14,16 @@ modn, and does this for each __*n*__.
 
 ### How To Use?
 
-```python
-import senol_randomizer as sr
 
-sr.newstr(num=10, _min=31, _max=128) # _min and _max, is a unicode range.
-sr.newint(_min=10, _max=100)
-sr.newfloat(_min=1, _max=20)
-sr.newbyte(num=100)
-sr.newbool()
-sr.RNG() # This is core function.
-```
+|Function Name|Description|Arguments|Returns|
+|-------------|-----------|---------|-------|
+|`newstr()`|Create random string with unicode range.|`num`:`int`, `_min`:`int`, `_max`:`int`|`str`|
+|`newint()`|Create random integer with range.|`_min`:`int`, `_max`:`int`|`int`|
+|`newfloat()`|Create random float with range.|`_min`:`int`, `_max`:`int`|`float`
+|`newbyte()`|Create random bytes.|`num`:`int`|`bytes`|
+|`newbool()`|Create random bool.|No Argument|`bool`|
+|`RNG()`|Core of library, create random big integer without range.|No argument|`int`
+
 
 [Project Repo Github](https://github.com/batuhansenol/senol-randomizer) •  [Project Repo PyPI](https://pypi.org/project/senol-randomizer/)
 
