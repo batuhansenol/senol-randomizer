@@ -38,19 +38,19 @@ n = [
 
 SOURCE_MAX = mpz(2**256)
 
-def compress(x: mpz, a: int, b: int) -> int:
-    if a > b:
-        raise ValueError(f"a: ({a}) > b: ({b})")
-    if a == b:
-        return a
+def compress(value: mpz, min_val: int, max_val: int) -> int:
+    if min_val> max_val:
+        raise ValueError(f"min: ({min_val}) > max: ({max_val})")
+    if min_val == max_val:
+        return min_val
 
-    span = mpz(b - a + 1)
+    span = mpz(max_val - min_val + 1)
     limit = SOURCE_MAX - (SOURCE_MAX % span)
 
     while x >= limit:
         x = mpz(int.from_bytes(o.urandom(32), 'big'))
 
-    return int(a + (x % span))
+    return int(min_val + (x % span))
 
 def ms(func, *args):
     start = t.perf_counter_ns()

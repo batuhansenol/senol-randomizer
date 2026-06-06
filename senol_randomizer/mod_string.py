@@ -6,16 +6,16 @@ alp = list(s.ascii_letters + s.digits)
 
 def createstr(
         
-        _min: int = 32,
-        _max: int = 122,
+        min_val: int = 32,
+        max_val: int = 122,
         num: int = 10,
 
         charsandnumbers: bool = False
 
         ):
     
-    if _min >= _max:
-        raise ValueError("The _min argument cannot be greater than or equal to the _max argument.")
+    if min_val >= max_val:
+        raise ValueError("The min_val argument cannot be greater than or equal to the max_val argument.")
     
     if charsandnumbers == True:
 
@@ -39,7 +39,7 @@ def createstr(
             nums.append(g.mpz(RNG()))
 
         for i in nums:
-            data.append(chr(compress(x=i, a=_min, b=_max)))
+            data.append(chr(compress(value=i, min_val=min_val, max_val=max_val)))
 
         return ''.join(data)
     

@@ -4,6 +4,8 @@ from .mod_float import createfloat as newfloat
 from .mod_bool import createbool as newbool
 from .mod_byte import createbyte as newbyte
 from .core import RNG
+from .core import compress
+from .mod_choice import choice
 from importlib.metadata import version
 
 
@@ -29,5 +31,7 @@ __all__ = [
     "newbool",
     "newbyte",
     "RNG",
-    "signature"
+    "signature",
+    "choice",
+    "compress"
 ]
