@@ -1,8 +1,8 @@
-from .senol_integer  import createint as newint
-from .senol_string import createstr as newstr
-from .senol_float import createfloat as newfloat   
-from .senol_bool import createbool as newbool
-from .senol_byte import createbyte as newbyte
+from .mod_integer  import createint as newint
+from .mod_string import createstr as newstr
+from .mod_float import createfloat as newfloat   
+from .mod_bool import createbool as newbool
+from .mod_byte import createbyte as newbyte
 from .core import RNG
 from importlib.metadata import version
 

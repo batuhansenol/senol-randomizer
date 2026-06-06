@@ -1,3 +1,0 @@
-import senol_randomizer as sr
-
-print(sr.RNG())
