@@ -43,6 +43,33 @@ modn, and does this for each __*n*__.
 |`choice()`|Selects a random element from the list.|`lst`:`list`|`any`|
 |`compress()`|Maps the given number into the range between min and max in a way that minimizes modulo bias.|`value`,`min_val`:`int`,`max_val`:`int`| `int`|
 
+
+## RNG Function Tests
+
+Statistical test results based on [NIST SP 800-22 Rev. 1a](https://github.com/dj-on-github/sp800_22_tests) test suite.
+
+| Test | P-Value | Result |
+|------|---------|--------|
+| `monobit_test` | 8.16e-13 | ❌ <span style="color:red">FAIL</span> |
+| `frequency_within_block_test` | 0.0106 | ✅ <span style="color:green">PASS</span> |
+| `runs_test` | 0.0 | ❌ <span style="color:red">FAIL</span> |
+| `longest_run_ones_in_a_block_test` | 0.9619 | ✅ <span style="color:green">PASS</span> |
+| `binary_matrix_rank_test` | 0.2564 | ✅ <span style="color:green">PASS</span> |
+| `dft_test` | 0.9358 | ✅ <span style="color:green">PASS</span> |
+| `non_overlapping_template_matching_test` | -1.2962 | ❌ <span style="color:red">FAIL</span> |
+| `overlapping_template_matching_test` | 0.9626 | ✅ <span style="color:green">PASS</span> |
+| `maurers_universal_test` | 0.3559 | ✅ <span style="color:green">PASS</span> |
+| `linear_complexity_test` | 0.1545 | ✅ <span style="color:green">PASS</span> |
+| `serial_test` | 2.22e-21 | ❌ <span style="color:red">FAIL</span> |
+| `approximate_entropy_test` | 1.86e-21 | ❌ <span style="color:red">FAIL</span> |
+| `cumulative_sums_test` | 5.78e-13 | ❌ <span style="color:red">FAIL</span> |
+| `random_excursion_test` | 0.2308 | ✅ <span style="color:green">PASS</span> |
+| `random_excursion_variant_test` | 0.1234 | ✅ <span style="color:green">PASS</span> |
+
+> Tests performed with 1 Mibibit (33,554,432 bits) of output data.  
+> 10/15 PASS — Work in progress.
+
+
 ----
 
 [Project Repo Github](https://github.com/batuhansenol/senol-randomizer) •  [Project Repo PyPI](https://pypi.org/project/senol-randomizer/)
