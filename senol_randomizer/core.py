@@ -47,10 +47,10 @@ def compress(value: mpz, min_val: int, max_val: int) -> int:
     span = mpz(max_val - min_val + 1)
     limit = SOURCE_MAX - (SOURCE_MAX % span)
 
-    while x >= limit:
-        x = mpz(int.from_bytes(o.urandom(32), 'big'))
+    while value >= limit:
+        value = mpz(int.from_bytes(o.urandom(32), 'big'))
 
-    return int(min_val + (x % span))
+    return int(min_val + (value % span))
 
 def ms(func, *args):
     start = t.perf_counter_ns()

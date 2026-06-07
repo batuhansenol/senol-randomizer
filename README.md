@@ -37,8 +37,12 @@ modn, and does this for each __*n*__.
 |`choice()`|Selects a random element from the list.|`lst`:`list`|`any`|
 |`compress()`|Maps the given number into the range between min and max in a way that minimizes modulo bias.|`value`,`min_val`:`int`,`max_val`:`int`| `int`|
 
+----
+
 [Project Repo Github](https://github.com/batuhansenol/senol-randomizer) •  [Project Repo PyPI](https://pypi.org/project/senol-randomizer/)
 
 [Author Github Profile](https://github.com/batuhansenol) • [Author PyPI Profile](https://pypi.org/user/Batuhan_Senol/)
+
+
 
 __*--Batuhan Şenol*__
