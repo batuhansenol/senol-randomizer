@@ -2,7 +2,6 @@ import gmpy2 as m
 from gmpy2 import mpz
 import os as o
 import time as t #for test
-import hashlib
 
 n = [
     mpz(57896044618658097711785492504343953926634992332820282019728792003956564820063),
@@ -72,7 +71,7 @@ def RNG():
         y = _256bit()
         x = m.powmod(x, y, i)
     
-    return int.from_bytes(hashlib.sha256(x.to_bytes(32, 'big')).digest(), 'big')
+    return compress(x, 0, 2**256 - 1)
 
 def logic(a: bytes, b: bytes, c: bytes) -> bytes:
     result = bytearray()
