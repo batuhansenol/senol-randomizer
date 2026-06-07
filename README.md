@@ -14,6 +14,12 @@ An RNG-core-based random data generator written in a cryptographic style, but la
 ![Github]( https://img.shields.io/badge/github-repo-blue?logo=github)
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20"/>
 
+###  Installation
+
+```bash
+pip install senol-randomizer
+```
+
 ### How does it work?
 
 - First, it takes 256-bit numbers from __/dev/urandom__.

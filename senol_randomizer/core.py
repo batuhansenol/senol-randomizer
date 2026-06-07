@@ -71,7 +71,7 @@ def RNG():
         y = _256bit()
         x = m.powmod(x, y, i)
     
-    return x
+    return compress(x, 0, 2**256 - 1)
 
 def logic(a: bytes, b: bytes, c: bytes) -> bytes:
     result = bytearray()
@@ -89,3 +89,6 @@ def logic(a: bytes, b: bytes, c: bytes) -> bytes:
 
 def rbyte(n):
     return o.urandom(n)
+
+
+print(ms(RNG))
