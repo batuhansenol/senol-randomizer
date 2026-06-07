@@ -91,5 +91,3 @@ def logic(a: bytes, b: bytes, c: bytes) -> bytes:
 def rbyte(n):
     return o.urandom(n)
 
-
-print(ms(RNG))

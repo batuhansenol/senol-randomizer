@@ -6,10 +6,10 @@ from .mod_byte import createbyte as newbyte
 from .core import RNG
 from .core import compress
 from .mod_choice import choice
-from importlib.metadata import version
 
 
-__version__ = version("senol-randomizer")
+__version__ = "0.1.12post1"
+
 
 def signature(show=False):
     data = (
