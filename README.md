@@ -49,25 +49,25 @@ modn, and does this for each __*n*__.
 Statistical test results based on [NIST SP 800-22 Rev. 1a](https://github.com/dj-on-github/sp800_22_tests) test suite.
 
 | Test | P-Value | Result |
-|------|---------|--------|
-| `monobit_test` | 8.16e-13 | ❌ <span style="color:red">FAIL</span> |
-| `frequency_within_block_test` | 0.0106 | ✅ <span style="color:green">PASS</span> |
-| `runs_test` | 0.0 | ❌ <span style="color:red">FAIL</span> |
-| `longest_run_ones_in_a_block_test` | 0.9619 | ✅ <span style="color:green">PASS</span> |
-| `binary_matrix_rank_test` | 0.2564 | ✅ <span style="color:green">PASS</span> |
-| `dft_test` | 0.9358 | ✅ <span style="color:green">PASS</span> |
-| `non_overlapping_template_matching_test` | -1.2962 | ❌ <span style="color:red">FAIL</span> |
-| `overlapping_template_matching_test` | 0.9626 | ✅ <span style="color:green">PASS</span> |
-| `maurers_universal_test` | 0.3559 | ✅ <span style="color:green">PASS</span> |
-| `linear_complexity_test` | 0.1545 | ✅ <span style="color:green">PASS</span> |
-| `serial_test` | 2.22e-21 | ❌ <span style="color:red">FAIL</span> |
-| `approximate_entropy_test` | 1.86e-21 | ❌ <span style="color:red">FAIL</span> |
-| `cumulative_sums_test` | 5.78e-13 | ❌ <span style="color:red">FAIL</span> |
-| `random_excursion_test` | 0.2308 | ✅ <span style="color:green">PASS</span> |
-| `random_excursion_variant_test` | 0.1234 | ✅ <span style="color:green">PASS</span> |
+| :--- | :--- | :--- |
+| `monobit_test` | 0.046613138703915244 | ✅ <span style="color:green">PASS</span> |
+| `frequency_within_block_test` | 0.6787903492122158 | ✅ <span style="color:green">PASS</span> |
+| `runs_test` | 0.33232036052397196 | ✅ <span style="color:green">PASS</span> |
+| `longest_run_ones_in_a_block_test` | 0.21020703185565603 | ✅ <span style="color:green">PASS</span> |
+| `binary_matrix_rank_test` | 0.2571877713800565 | ✅ <span style="color:green">PASS</span> |
+| `dft_test` | 0.8685773273998374 | ✅ <span style="color:green">PASS</span> |
+| `non_overlapping_template_matching_test` | 0.893926430778068 | ✅ <span style="color:green">PASS</span> |
+| `overlapping_template_matching_test` | 0.7796009868841686 | ✅ <span style="color:green">PASS</span> |
+| `maurers_universal_test` | 0.9802530560443485 | ✅ <span style="color:green">PASS</span> |
+| `linear_complexity_test` | 0.4685290247356243 | ✅ <span style="color:green">PASS</span> |
+| `serial_test` | 0.5630465232357214 | ✅ <span style="color:green">PASS</span> |
+| `approximate_entropy_test` | 0.5631130245829565 | ✅ <span style="color:green">PASS</span> |
+| `cumulative_sums_test` | 0.039939937090386124 | ✅ <span style="color:green">PASS</span> |
+| `random_excursion_test` | 0.5178616373360564 | ✅ <span style="color:green">PASS</span> |
+| `random_excursion_variant_test` | 0.14694060874229203 | ✅ <span style="color:green">PASS</span> |
 
 > Tests performed with 1 Mibibit (33,554,432 bits) of output data.  
-> 10/15 PASS — Work in progress.
+> 15/15 PASS — Work in progress.
 
 
 ----
