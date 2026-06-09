@@ -42,6 +42,7 @@ modn, and does this for each __*n*__.
 |`RNG()`|Core of library, create random big integer without range.|No argument|`int`|
 |`choice()`|Selects a random element from the list.|`lst`:`list`|`any`|
 |`compress()`|Maps the given number into the range between min and max in a way that minimizes modulo bias.|`value`,`min_val`:`int`,`max_val`:`int`| `int`|
+|`shuffle()`|Shuffles the given list and returns it.|`lst`:`list`|`list`|
 
 
 ## RNG Function Tests

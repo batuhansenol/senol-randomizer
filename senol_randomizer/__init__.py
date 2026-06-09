@@ -6,9 +6,16 @@ from .mod_byte import createbyte as newbyte
 from .core import RNG
 from .core import compress
 from .mod_choice import choice
+from .mod_shuffle import shuffle
 
 
-__version__ = "0.1.12post1"
+from importlib.metadata import version
+
+try:
+    __version__ = version("senol-randomizer")
+except Exception:
+    __version__ = "0.0.0"
+
 
 
 def signature(show=False):
@@ -33,5 +40,6 @@ __all__ = [
     "RNG",
     "signature",
     "choice",
-    "compress"
+    "compress",
+    "shuffle"
 ]
