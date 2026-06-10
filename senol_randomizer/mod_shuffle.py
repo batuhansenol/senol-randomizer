@@ -1,28 +1,22 @@
 
 
-from .mod_choice import choice
 
-def shuffle(
-        lst:list=None
-) -> list :
-    
+
+
+
+from .core import RNG, compress
+
+def shuffle(lst: list = None) -> list:
     if lst is None:
-        raise ValueError("lst value i cannot None.")
+        raise ValueError("lst cannot be None.")
     
-    shuffle_lst = []
-
-    while len(lst) != 0:
-
-        select = choice(lst=lst)
-
-        shuffle_lst.append(select)
-        lst.remove(select)
-
-    return shuffle_lst
-
-
-
-
-
+    result = lst.copy()
+    n = len(result)
+    
+    for i in range(n - 1, 0, -1):
+        j = compress(value=RNG(), min_val=0, max_val=n - 1)  
+        result[i], result[j] = result[j], result[i]
+    
+    return result
 
 
