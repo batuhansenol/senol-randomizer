@@ -7,7 +7,7 @@ from .core import RNG
 from .core import compress
 from .mod_choice import choice
 from .mod_shuffle import shuffle
-
+from .mod_url_safe import url_safe
 
 from importlib.metadata import version
 
@@ -41,5 +41,6 @@ __all__ = [
     "signature",
     "choice",
     "compress",
-    "shuffle"
+    "shuffle",
+    "url_safe"
 ]

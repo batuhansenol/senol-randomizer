@@ -10,7 +10,6 @@ An RNG-core-based random data generator written in a cryptographic style, but la
 ![python](https://img.shields.io/badge/Python-3.10+-blue.svg?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-Apache%202.0-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
-![Type](https://img.shields.io/badge/API-File%20Operations-informational)
 ![Github]( https://img.shields.io/badge/github-repo-blue?logo=github)
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20"/>
 
@@ -43,6 +42,7 @@ modn, and does this for each __*n*__.
 |`choice()`|Selects a random element from the list.|`lst`:`list`|`any`|
 |`compress()`|Maps the given number into the range between min and max in a way that minimizes modulo bias.|`value`,`min_val`:`int`,`max_val`:`int`| `int`|
 |`shuffle()`|Shuffles the given list and returns it. O(n)|`lst`:`list`|`list`|
+|`shuffle()`|Create random url safe strings.|`length`:`int`|`str`|
 
 
 ## RNG Function Tests
